@@ -20,7 +20,7 @@ const todoreducer =(state=initialData,action)=>{
             }
         case "Delete_Todo":
             
-            const newList=state.list.filter((elem)=>elem.id != action.id)
+            const newList=state.list.filter((elem)=>elem.id !== action.id)
 
             return{
                 ...state,
